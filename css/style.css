@@ -1778,7 +1778,6 @@ TABLET-MEDIA
     box-sizing: border-box;
     transition: background-color 0.5s ease;
     box-shadow: rgba(0,0,0, 0.2) 0 0 10px;
-    opacity: .9;
   }
   #btn-1:checked ~ .site-wrapper .main-header {
     background: #849d8f;
@@ -2250,7 +2249,6 @@ MOBILE-MEDIA
     box-sizing: border-box;
     transition: background-color 0.5s ease;
     box-shadow: rgba(0, 0, 0, 0.2) 0 0 10px;
-    opacity: 0.9;
   }
   #btn-1:checked ~ .site-wrapper .main-header {
     background: #849d8f;
