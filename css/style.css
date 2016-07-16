@@ -2174,7 +2174,7 @@ TABLET-MEDIA
     display: inline-block;
   }
   .popup {
-    top: 27%;
+    top: 260px;
     left: 0;
     right: auto;
     width: 100%;
