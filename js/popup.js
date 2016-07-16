@@ -10,7 +10,7 @@
     event.preventDefault();
     popup.classList.add("popup-content-show");
     overlay.classList.add("popup-overlay-show");
-    username.focus();
+    // username.focus();
   });
   close.addEventListener("click", function(event) {
     event.preventDefault();
