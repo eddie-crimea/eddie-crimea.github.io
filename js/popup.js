@@ -3,6 +3,8 @@
   var close = popup.querySelector(".popup-content-close");
   var overlay = document.querySelector(".popup-overlay");
   var username = popup.querySelector(".popup-user-field")
+  var menuToggler = document.querySelector(".menu-toggler");
+  var menu = document.querySelector(".main-nav-list");
 
   link.addEventListener("click", function(event) {
     event.preventDefault();
@@ -26,4 +28,8 @@
         overlay.classList.remove("popup-overlay-show")
       }
     }
+  });
+
+  menuToggler.addEventListener("click", function () {
+    menu.classList.toggle("active");
   });
