@@ -31,7 +31,7 @@ body > input[type="radio"] {
 }
 .main-nav {
   float: left;
-  width: 400px;
+  width: auto;
   min-height: 65px;
   margin-left: 13px;
 }
@@ -1147,7 +1147,7 @@ margin-top: 33px;
   display: none;
   z-index: 10;
 }
-.popup {
+/*.popup {
   position: fixed;
   top: 36%;
   right: 37%;
@@ -1155,11 +1155,11 @@ margin-top: 33px;
   margin-left: -215px;
   padding: 20px 25px;
   background: #f8f7f4;
-  /*color: #000000;*/
+  color: #000000;
   border-radius: 5px;
   display: none;
   z-index: 10;
-}
+}*/
 .popup-title {
   display: inline-block;
   vertical-align: top;
@@ -1734,9 +1734,9 @@ h1 {
 }
 
 /*
-------------------------------------------------------------------------
-  TABLET-MEDIA
-------------------------------------------------------------------------
+
+TABLET-MEDIA
+
 */
 @media all and (max-width: 768px) {
   body {
@@ -1744,32 +1744,20 @@ h1 {
   }
   .site-wrapper {
     min-width: 480px;
-<<<<<<< HEAD
-    padding-top: 50px;
-    overflow: hidden;
-    background-size: 550px auto;
-    background-position: 50% 50px;
-=======
     background-size: 100% auto;
     overflow: hidden;
     background-position: 50% 30px;
     padding-top: 80px;
->>>>>>> origin/master
   }
   .container {
-    width: auto;
     padding: 0 20px;
+    width: auto;
   }
   .logo-main {
-    position: relative;
     width: auto;
-    margin-top: -9px;
     min-height: 0;
     line-height: 1;
-<<<<<<< HEAD
-=======
     position: relative;
->>>>>>> origin/master
     z-index: 11;
   }
   .logo-main img {
@@ -1778,6 +1766,7 @@ h1 {
   }
   .main-header {
     position: fixed;
+    z-index: 10;
     top: 0;
     left: 0;
     width: 100%;
@@ -1786,7 +1775,6 @@ h1 {
     box-sizing: border-box;
     transition: background-color 0.5s ease;
     box-shadow: rgba(0,0,0, 0.2) 0 0 10px;
-    z-index: 10;
   }
   #btn-1:checked ~ .site-wrapper .main-header {
     background: #849d8f;
@@ -1797,60 +1785,12 @@ h1 {
   #btn-3:checked ~ .site-wrapper .main-header {
     background: #9d8b84;
   }
-<<<<<<< HEAD
-  .main-nav {
-    width: auto;
-    min-height: 0;
-  }
-  .main-nav-list {
-    position: fixed;
-    left: 0;
-    top: 50px;
-    width: 100%;
-    height: 0;
-    padding: 0;
-    transition: height .3s;
-    background: #849d8f;
-    box-sizing: border-box;
-    overflow: hidden;
-    z-index: 10;
-   }
-  .main-nav-list.active {
-    height: calc(100% - 50px);
-  }
-=======
->>>>>>> origin/master
   .main-nav-item {
     font-size: 14px;
   }
   .dropdown,
   .main-nav-link {
-<<<<<<< HEAD
-    display: inline-block;
-    margin-left: 0;
-    margin-top: 6px;
-  }
-  .dropdown-link {
-    padding: 7px 10px 7px 25px; 
-    color: #fff;
-  }
-  .dropdown-link:first-child:before {
-    display: none;
-  }
-  .dropdown-link:hover,
-  .dropdown-link:active {
-    background: none;
-    font-weight: bold;
-  }
-  .dropdown-content {
-    position: static;
-    min-height: 0;
-    background: none;
-    box-shadow: none;
-    opacity: 1;
-=======
     margin-top: 11px;
->>>>>>> origin/master
   }
   .user-block {
     width: auto;
@@ -1861,105 +1801,17 @@ h1 {
     margin-left: 4px;
     line-height: 14px;
   }
-  .login-link,
+   .login-link,
   .basket {
+    background-size: 14px auto !important;
     padding: 6px 10px;
     padding-left: 31px;
-    background-size: 14px auto !important;
   }
-<<<<<<< HEAD
-  .menu-toggler {
-    display: inline-block;
-    font-size: 0;
-  }
-  .menu-toggler a {
-    display: inline-block;
-    padding: 6px 8px;
-    text-decoration: none;
-    color: #ffffff;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 50px;
-  }
-  .menu-toggler a:before {
-    content: "";
-    position: relative;
-    top: 3px;
-    display: block;
-    width: 12px;
-    height: 2px;
-    background: #fff;
-    box-shadow: 0 4px #fff, 0 8px #fff;
-  }
-  .menu-toggler a:hover {
-    background: #f8f7f4;
-  }
-   .menu-toggler a:hover:before {
-    background: #000;
-    box-shadow: 0 4px #000, 0 8px #000;
-  }
-=======
->>>>>>> origin/master
   .search-link {
     width: 26px;
     height: 26px;
     background-size: 14px auto !important;
   }
-<<<<<<< HEAD
-  .search-dropdown-content {
-    position: fixed;
-    top: 50px;
-    left: 0;
-    width: 100%;
-    padding: 10px;
-    min-height: 0;
-    box-sizing: border-box;
-  }
-  .search-dropdown-content:before {
-    content: "";
-    position: absolute;
-    bottom: 100%;
-    right: 0;
-    width: 100%;
-    height: 15px;
-}
-  .search-form {
-    width: 100%;
-    margin: 0;
-    padding: 10px !important;
-    box-sizing: border-box;
-    border-width: 1px !important;
-    outline: none;
-  }
-  .login-btn {
-    margin: 0;
-    font-size: 16px;
-    line-height: 18px;
-  }
-  .login-dropdown-content {
-    position: fixed;
-    left: 0;
-    top: 50px;
-    width: 100%;
-    padding: 15px;
-    min-height: 0;
-    box-sizing: border-box;
-  }
-  .login-dropdown-content input[type="text"],
-  .login-dropdown-content input[type="password"] {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 10px !important;
-    margin: 0 0 15px;
-    border-width: 1px !important;
-    outline: none;
-    line-height: 1;
-  }
-  .users-help-item {
-    margin-top: 8px;
-    margin-bottom: -3px;
-  }
-=======
->>>>>>> origin/master
   .info-block {
     margin-top: 10px;
     line-height: 1;
@@ -1972,21 +1824,18 @@ h1 {
     line-height: 1;
     font-size: 16px;
   }
-<<<<<<< HEAD
-=======
   .login-btn {
     margin-top: 3px;
     font-size: 16px;
     line-height: 18px;
   }
->>>>>>> origin/master
   .slider {
     padding-top: 215px;
     clear: both;
   }
   .slider-controls {
-    left: 5px;
     bottom: 10px;
+    left: 5px;
   }
   .slider-controls label {
   width: 12px;
@@ -1998,16 +1847,16 @@ h1 {
   }
   .slide-title {
     width: auto;
-    min-height: 95px;
-    margin-bottom: 10px;
     font-size: 24px;
-    text-align: center;
     line-height: 1;
+    text-align: center;
+    margin-bottom: 10px;
+    min-height: 95px;
   }
   .slide-btn {
-    padding: 10px 20px;
     font-size: 17px;
     line-height: 20px;
+    padding: 10px 20px;
   }
   .banner-container {
     width: auto;
@@ -2015,20 +1864,17 @@ h1 {
   }
   .banner {
     width: 100%;
-    min-height: 0;
     float: none;
     padding: 15px;
     margin-bottom: 20px !important;
-    text-align: right;
-<<<<<<< HEAD
     box-sizing: border-box;
-=======
+    min-height: 0;
+    text-align: right;
     background-position: 50% 50% !important;
->>>>>>> origin/master
   }
   .banner-desc {
-    width: auto;
     text-align: left;
+    width: auto;
     font-size: 16px;
     line-height: 22px;
   }
@@ -2116,14 +1962,8 @@ h1 {
   }
   .mail-block input[type="text"] {
     width: 100%;
-<<<<<<< HEAD
-    margin: 0;
-    margin-bottom: 20px;
-    box-sizing: border-box;
-=======
     box-sizing: border-box;
     margin: 0 0 20px;
->>>>>>> origin/master
   }
   .mail-block-wrapper {
     width: auto;
@@ -2145,8 +1985,8 @@ h1 {
   }
   .map-block {
     width: 100%;
-    margin: 0;
     overflow: hidden;
+    margin: 0;
   }
   .map iframe {
     width: 100%;
@@ -2156,8 +1996,8 @@ h1 {
   .adress-block {
     position: static;
     width: auto;
-    max-width: none;
     border-radius: 0;
+    max-width: none;
   }
   .address-block-btn {
     font-size: 16px;
@@ -2174,10 +2014,10 @@ h1 {
     margin: 0;
   }
   .footer-social {
+    margin: 0 0 20px;
     float: none;
     width: auto;
     min-height: 0;
-    margin: 0 0 20px;
   }
   .social-list {
     text-align: center;
@@ -2199,17 +2039,17 @@ h1 {
   }
   .footer-made {
     display: block;
-    padding: 0;
     text-align: center;
+    padding: 0;
   }
   .info-block {
     margin-top: 10px;
   }
   .info-item {
+    margin: 0 !important;
     display: block;
     float: none;
     width: auto !important;
-    margin: 0 !important;
     text-align: center;
   }
   .info-link {
@@ -2220,12 +2060,12 @@ h1 {
     left: 0;
     right: auto;
     width: 100%;
-    max-width: none;
     height: 100%;
     margin-left: 0;
     padding: 15px;
     box-sizing: border-box;
     border-radius: 0;
+    max-width: none;
   }
   .popup-title {
     font-size: 17px;
@@ -2234,24 +2074,24 @@ h1 {
   .popup-mail-field,
   .popup-text-field {
     width: 100%;
-    padding: 10px;
-    font-size: 14px;
+    box-sizing: border-box;
     line-height: 1;
     outline: none;
-    box-sizing: border-box;
+    padding: 10px;
+    font-size: 14px;
   }
   .popup-btn {
     float: left;
-    margin: 10px 0 0;
     font-size: 16px;
     line-height: 18px;
+    margin: 10px 0 0;
   }
 }
 
 /*
-------------------------------------------------------------------------
-  MOBILE-MEDIA
-------------------------------------------------------------------------
+
+MOBILE-MEDIA
+
 */
 
 @media all and (max-width: 480px) {
